@@ -1,9 +1,3 @@
-"""
-One-way relay of local events to the GCS CLI, per 01_DESIGN.md section 7.
-Fire-and-forget UDP broadcast of SWARM_LOG messages; this module never reads
-inbound messages and never participates in election/failover decisions --
-the GCS is receive-only observability, not a control-loop participant.
-"""
 
 from __future__ import annotations
 
